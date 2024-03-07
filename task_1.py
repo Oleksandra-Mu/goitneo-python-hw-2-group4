@@ -1,5 +1,6 @@
 """Bot assistant that works with phone contacts"""
 def input_error(func):
+    """Error decorator"""
     def inner(*args, **kwargs):
         try:
             return func(*args, **kwargs)
